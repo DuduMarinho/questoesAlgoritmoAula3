@@ -1,0 +1,184 @@
+1- #include <stdio.h>
+int main() {
+
+float n1, n2, n3;
+
+n1 = 0;
+n2 = 8;
+n3 = 12;
+
+
+printf("A média de valores é: %.2f", (n1+n2+n3) /3);
+
+return 0;
+}
+
+
+2- #include <stdio.h>
+int main() {
+
+int base, altura, per, soma;
+
+printf("Digite a área da base: ");
+scanf("%d", &base);
+
+printf("Digite a altura: ");
+scanf("%d", &altura);
+
+soma = base*altura;
+
+per = (base*2) + (altura*2);
+
+printf("A área é: %d \n", soma);
+printf("O perímetro é: %d", per);
+
+return 0;
+}
+
+
+3- #include <stdio.h>
+int main() {
+
+int v1, v2;
+
+printf("Digite o valor inicial: ");
+scanf("%d", &v1);
+
+v2 = (v1 * 0.65) + v1;
+
+printf("O novo valor é: %d", v2);
+
+return 0;
+}
+
+
+4- #include <stdio.h>
+#include <math.h>
+
+int main() {
+    float emp, fin;
+    int meses;
+    float juros = 0.02;
+
+    printf("Quanto você quer emprestado? ");
+    scanf("%f", &emp);
+
+    printf("Em quantos meses você vai pagar? ");
+    scanf("%d", &meses);
+    
+    fin = emp * pow((1 + juros), meses);
+    // usei o pow para calcular o expoente, por isso puxei outra biblioteca
+
+    printf("O valor final após a aplicação dos juros é: %.2f\n", fin);
+
+    return 0;
+}
+
+
+5- #include <stdio.h>
+
+int main() {
+    int prod, desc;
+    float fin;
+
+    printf("Digite o valor do produto: ");
+    scanf("%d", &prod);
+
+    printf("Qual o desconto (em porcentagem) que será dado? ");
+    scanf("%d", &desc);
+    
+    fin = prod * (1 - (float)desc/100);
+
+    printf("O valor final é: %.2f\n", fin);
+
+    return 0;
+}
+
+
+6- #include <stdio.h>
+
+int main() {
+    int sal, porc;
+    float fin;
+
+    printf("Digite o seu salário: ");
+    scanf("%d", &sal);
+
+    printf("Qual o reajuste (em porcentagem) que será dado? ");
+    scanf("%d", &porc);
+    
+    fin = sal * (1 + (float)porc/100);
+
+    printf("O valor final é: %.2f\n", fin);
+
+    return 0;
+}
+
+
+7- #include <stdio.h>
+int main() 
+{
+float dol, real;
+printf("Digite quantos reais você tem: ");
+scanf("%f", &real);
+
+dol = real / 4.87; //cotação no dia 24/8/23 as 14:36 ou 17:36 UTC
+
+printf("A sua quantia em dolares é: %.2f \n", dol);
+
+
+
+return 0;
+}
+
+
+8- #include <stdio.h>
+int main() 
+{
+float valn, saldo;
+printf("Digite seu saldo: ");
+scanf("%f", &saldo);
+
+valn = (saldo * 0.02) + saldo;
+
+printf("O seu saldo agora é: %.2f \n", valn);
+
+
+
+return 0;
+}
+
+
+9- #include <stdio.h>
+int main() 
+{
+int num, quad;
+printf("Digite um número: ");
+scanf("%d", &num);
+
+quad = num * num;
+
+printf("O número inicial digitado ao quadrado é: %d \n", quad);
+
+
+
+return 0;
+}
+
+
+10- #include <stdio.h>
+int main() 
+{
+int num;
+float nnum;
+printf("Digite um número: ");
+scanf("%d", &num);
+
+nnum = num * 0.25;
+
+printf("1/4 do valor inicial é: %.2f \n", nnum);
+
+
+
+return 0;
+}
